@@ -5,6 +5,7 @@
 #define TEXTFILE	                    255
 #define DAY1_INPUT						254
 #define DAY2_INPUT						253
+#define DAY3_INPUT						252
 
 // Next default values for new objects
 // 

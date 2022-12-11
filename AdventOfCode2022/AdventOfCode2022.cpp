@@ -11,6 +11,7 @@ using namespace std;
 #include "AdventOfCode2022.h"
 #include "DayOne.h"
 #include "DayTwo.h"
+#include "DayThree.h"
 
 // Data Input/Output
 HMODULE GCM()
@@ -26,7 +27,7 @@ HMODULE GCM()
 // Execution
 int main()
 {
-	AOC::AdventDay daySelector = AOC::AdventDayTwo;
+	AOC::AdventDay daySelector = AOC::AdventDayThree;
 	AOC aoc = AOC();
 
 	switch (daySelector)
@@ -36,6 +37,9 @@ int main()
 			break;
 		case AOC::AdventDay::AdventDayTwo:
 			aoc.SolveDayTwo();
+			break;
+		case AOC::AdventDay::AdventDayThree:
+			aoc.SolveDayThree();
 			break;
 		default:
 			break;
@@ -75,6 +79,24 @@ void AOC::SolveDayTwo()
 	else if (partSelector == 2)
 	{
 		dayTwo.CrunchPartTwo(inputData);
+	}
+}
+
+void AOC::SolveDayThree()
+{
+	int resourceInput = DAY3_INPUT;
+	int resourceType = TEXTFILE;
+	string inputData = AOC::GetAdventDayInput(resourceInput, resourceType);
+
+	DayThree dayThree = DayThree();
+	int partSelector = 2;
+	if (partSelector == 1)
+	{
+		dayThree.CrunchPartOne(inputData);
+	}
+	else if (partSelector == 2)
+	{
+		dayThree.CrunchPartTwo(inputData);
 	}
 }
 

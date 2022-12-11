@@ -5,7 +5,7 @@ using std::string;
 class DayTwo
 {
 	// Attributes
-	public:
+	private:
 		enum RPSType { RPSRock, RPSPaper, RPSScissors, Skip };
 		enum MatchOutcomeType { Lose, Draw, Win };
 		int rockScore = 1;
@@ -18,6 +18,7 @@ class DayTwo
 	public:
 		void CrunchPartOne(string& input);
 		void CrunchPartTwo(string& input);
+	private:
 		RPSType DecodeOpponentRPSType(char& code);
 		RPSType DecodeSelfRPSType(char& code);
 		MatchOutcomeType DecodeMatchOutcomeType(char& code);
