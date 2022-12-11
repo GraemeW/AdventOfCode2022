@@ -2,8 +2,9 @@
 // Microsoft Visual C++ generated include file.
 // Used by Resource.rc
 //
-#define DAY1_INPUT	                    255
-#define TEXTFILE						254
+#define TEXTFILE	                    255
+#define DAY1_INPUT						254
+#define DAY2_INPUT						253
 
 // Next default values for new objects
 // 
