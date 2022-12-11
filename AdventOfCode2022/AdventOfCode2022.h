@@ -1,15 +1,14 @@
 #pragma once
+#include "Days.h"
 
 class AOC
 {
 	// Attributes
 	public:
-		enum AdventDay { AdventDayOne, AdventDayTwo, AdventDayThree };
+		enum AdventDay { AdventDayOne, AdventDayTwo, AdventDayThree, AdventDayFour };
 
 	// Methods
 	public:
-		string GetAdventDayInput(int& resourceInput, int& resourceType);
-		void SolveDayOne();
-		void SolveDayTwo();
-		void SolveDayThree();
+		static string GetAdventDayInput(int& resourceInput, int& resourceType);
+		static Day* GetDaySelectors(AdventDay adventDay, int& resourceInput);
 };

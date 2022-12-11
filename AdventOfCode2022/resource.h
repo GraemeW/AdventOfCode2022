@@ -6,6 +6,7 @@
 #define DAY1_INPUT						254
 #define DAY2_INPUT						253
 #define DAY3_INPUT						252
+#define DAY4_INPUT						251
 
 // Next default values for new objects
 // 

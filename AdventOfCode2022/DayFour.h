@@ -1,10 +1,11 @@
 #pragma once
 #include "Day.h"
 
-class DayOne : public Day
+class DayFour : public Day
 {
 	public:
 		void CrunchPartOne(string& input) override;
 		void CrunchPartTwo(string& input) override;
+
 };
 

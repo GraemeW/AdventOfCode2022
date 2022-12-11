@@ -1,8 +1,7 @@
 #pragma once
-using std::string;
-#include <string>
+#include "Day.h"
 
-class DayTwo
+class DayTwo : public Day
 {
 	// Attributes
 	private:
@@ -16,8 +15,8 @@ class DayTwo
 
 	// Methods
 	public:
-		void CrunchPartOne(string& input);
-		void CrunchPartTwo(string& input);
+		void CrunchPartOne(string& input) override;
+		void CrunchPartTwo(string& input) override;
 	private:
 		RPSType DecodeOpponentRPSType(char& code);
 		RPSType DecodeSelfRPSType(char& code);

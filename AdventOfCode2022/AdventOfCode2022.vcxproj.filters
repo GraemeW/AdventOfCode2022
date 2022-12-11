@@ -27,6 +27,12 @@
     <ClCompile Include="DayThree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DayFour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DayZero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -44,6 +50,18 @@
     <ClInclude Include="DayThree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DayFour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DayZero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Days.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc">
@@ -54,10 +72,13 @@
     <CopyFileToFolders Include="Day1Input.txt">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="..\..\..\..\Downloads\Day2Input.txt">
+    <CopyFileToFolders Include="Day2Input.txt">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="..\..\..\..\Downloads\Day3Input.txt">
+    <CopyFileToFolders Include="Day3Input.txt">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Day4Input.txt">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
   </ItemGroup>

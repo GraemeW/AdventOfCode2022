@@ -1,10 +1,9 @@
 #pragma once
-using std::string;
-#include <string>
 #include <map>
 #include <vector>
+#include "Day.h"
 
-class DayThree
+class DayThree : public Day
 {
 	// Constructor
 	public:
@@ -17,8 +16,8 @@ class DayThree
 
 	// Methods
 	public:
-		void CrunchPartOne(string& input);
-		void CrunchPartTwo(string& input);
+		void CrunchPartOne(string& input) override;
+		void CrunchPartTwo(string& input) override;
 	private:
 		map<char, int> GetUniqueCompartment(string & inputString);
 		char GetMatchedEntry(map<char, int> compartmentA, map<char, int> compartmentB);

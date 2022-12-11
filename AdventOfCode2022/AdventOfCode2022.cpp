@@ -9,9 +9,6 @@ using namespace std;
 // Other Includes
 #include "resource.h"
 #include "AdventOfCode2022.h"
-#include "DayOne.h"
-#include "DayTwo.h"
-#include "DayThree.h"
 
 // Data Input/Output
 HMODULE GCM()
@@ -27,77 +24,27 @@ HMODULE GCM()
 // Execution
 int main()
 {
+	// Main Selection
 	AOC::AdventDay daySelector = AOC::AdventDayThree;
-	AOC aoc = AOC();
-
-	switch (daySelector)
-	{
-		case AOC::AdventDay::AdventDayOne:
-			aoc.SolveDayOne();
-			break;
-		case AOC::AdventDay::AdventDayTwo:
-			aoc.SolveDayTwo();
-			break;
-		case AOC::AdventDay::AdventDayThree:
-			aoc.SolveDayThree();
-			break;
-		default:
-			break;
-	}
-}
-
-void AOC::SolveDayOne()
-{
-	int resourceInput = DAY1_INPUT;
-	int resourceType = TEXTFILE;
-	string inputData = AOC::GetAdventDayInput(resourceInput, resourceType);
-
-	DayOne dayOne = DayOne();
 	int partSelector = 2;
+
+	// Execution
+	int resourceType = TEXTFILE;
+	int resourceInput;
+	Day* day = AOC::GetDaySelectors(daySelector, resourceInput);
+
+	string inputData = AOC::GetAdventDayInput(resourceInput, resourceType);
 	if (partSelector == 1)
 	{
-		dayOne.CrunchPartOne(inputData);
+		day->CrunchPartOne(inputData);
 	}
 	else if (partSelector == 2)
 	{
-		dayOne.CrunchPartTwo(inputData);
+		day->CrunchPartTwo(inputData);
 	}
-}
 
-void AOC::SolveDayTwo()
-{
-	int resourceInput = DAY2_INPUT;
-	int resourceType = TEXTFILE;
-	string inputData = AOC::GetAdventDayInput(resourceInput, resourceType);
-
-	DayTwo dayTwo = DayTwo();
-	int partSelector = 2;
-	if (partSelector == 1)
-	{
-		dayTwo.CrunchPartOne(inputData);
-	}
-	else if (partSelector == 2)
-	{
-		dayTwo.CrunchPartTwo(inputData);
-	}
-}
-
-void AOC::SolveDayThree()
-{
-	int resourceInput = DAY3_INPUT;
-	int resourceType = TEXTFILE;
-	string inputData = AOC::GetAdventDayInput(resourceInput, resourceType);
-
-	DayThree dayThree = DayThree();
-	int partSelector = 2;
-	if (partSelector == 1)
-	{
-		dayThree.CrunchPartOne(inputData);
-	}
-	else if (partSelector == 2)
-	{
-		dayThree.CrunchPartTwo(inputData);
-	}
+	// Clean Up
+	free(day);
 }
 
 string AOC::GetAdventDayInput(int& resourceInput, int& resourceType)
@@ -113,4 +60,37 @@ string AOC::GetAdventDayInput(int& resourceInput, int& resourceType)
 	string result;
 	result.assign(hFinal, hSize);
 	return result;
+}
+
+Day* AOC::GetDaySelectors(AdventDay adventDay, int& resourceInput)
+{
+	switch (adventDay)
+	{
+		case AOC::AdventDay::AdventDayOne:
+		{
+			resourceInput = DAY1_INPUT;
+			DayOne* dayOne = new DayOne();
+			return dayOne;
+		}
+		case AOC::AdventDay::AdventDayTwo:
+		{
+			resourceInput = DAY2_INPUT;
+			DayTwo* dayTwo = new DayTwo();
+			return dayTwo;
+		}
+		case AOC::AdventDay::AdventDayThree:
+		{
+			resourceInput = DAY3_INPUT;
+			DayThree* dayThree = new DayThree();
+			return dayThree;
+		}
+		case AOC::AdventDay::AdventDayFour:
+		{
+			resourceInput = DAY4_INPUT;
+			DayFour* dayFour = new DayFour();
+			return dayFour;
+		}
+	}
+	DayZero* dayZero = new DayZero();
+	return dayZero;
 }
