@@ -1,7 +1,8 @@
 #pragma once
 
-#include "DayZero.h";
-#include "DayOne.h"
-#include "DayTwo.h"
-#include "DayThree.h"
-#include "DayFour.h"
+#include "Day0/DayZero.h";
+#include "Day1/DayOne.h"
+#include "Day2/DayTwo.h"
+#include "Day3/DayThree.h"
+#include "Day4/DayFour.h"
+#include "Day5/DayFive.h"

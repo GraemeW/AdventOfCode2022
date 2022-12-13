@@ -1,7 +1,7 @@
 #pragma once
 #include <map>
 #include <vector>
-#include "Day.h"
+#include "../Day.h"
 
 class DayThree : public Day
 {

@@ -90,6 +90,12 @@ Day* AOC::GetDaySelectors(AdventDay adventDay, int& resourceInput)
 			DayFour* dayFour = new DayFour();
 			return dayFour;
 		}
+		case AOC::AdventDay::AdventDayFive:
+		{
+			resourceInput = DAY5_INPUT;
+			DayFive* dayFour = new DayFive();
+			return dayFour;
+		}
 	}
 	DayZero* dayZero = new DayZero();
 	return dayZero;

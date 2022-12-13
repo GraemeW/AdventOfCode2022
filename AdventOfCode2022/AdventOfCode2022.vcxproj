@@ -128,28 +128,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdventOfCode2022.cpp" />
-    <ClCompile Include="DayFour.cpp" />
-    <ClCompile Include="DayOne.cpp" />
-    <ClCompile Include="DayThree.cpp" />
-    <ClCompile Include="DayTwo.cpp" />
-    <ClCompile Include="DayZero.cpp" />
+    <ClCompile Include="Day5\DayFive.cpp" />
+    <ClCompile Include="Day4\DayFour.cpp" />
+    <ClCompile Include="Day1\DayOne.cpp" />
+    <ClCompile Include="Day3\DayThree.cpp" />
+    <ClCompile Include="Day2\DayTwo.cpp" />
+    <ClCompile Include="Day0\DayZero.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventOfCode2022.h" />
     <ClInclude Include="Day.h" />
-    <ClInclude Include="DayFour.h" />
-    <ClInclude Include="DayOne.h" />
+    <ClInclude Include="Day5\DayFive.h" />
+    <ClInclude Include="Day4\DayFour.h" />
+    <ClInclude Include="Day1\DayOne.h" />
     <ClInclude Include="Days.h" />
-    <ClInclude Include="DayThree.h" />
-    <ClInclude Include="DayTwo.h" />
-    <ClInclude Include="DayZero.h" />
+    <ClInclude Include="Day3\DayThree.h" />
+    <ClInclude Include="Day2\DayTwo.h" />
+    <ClInclude Include="Day0\DayZero.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <CopyFileToFolders Include="Day1Input.txt">
+    <CopyFileToFolders Include="Resources\Day1Input.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
@@ -157,9 +159,7 @@
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatOutputAsContent>
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatOutputAsContent>
     </CopyFileToFolders>
-  </ItemGroup>
-  <ItemGroup>
-    <CopyFileToFolders Include="Day2Input.txt">
+    <CopyFileToFolders Include="Resources\Day2Input.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
@@ -167,7 +167,7 @@
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatOutputAsContent>
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatOutputAsContent>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="Day3Input.txt">
+    <CopyFileToFolders Include="Resources\Day3Input.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
@@ -175,7 +175,15 @@
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatOutputAsContent>
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatOutputAsContent>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="Day4Input.txt">
+    <CopyFileToFolders Include="Resources\Day4Input.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatOutputAsContent>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Resources\Day5Input.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>

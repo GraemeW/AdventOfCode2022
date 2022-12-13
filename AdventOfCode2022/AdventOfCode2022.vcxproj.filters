@@ -18,19 +18,22 @@
     <ClCompile Include="AdventOfCode2022.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DayOne.cpp">
+    <ClCompile Include="Day1\DayOne.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DayTwo.cpp">
+    <ClCompile Include="Day2\DayTwo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DayThree.cpp">
+    <ClCompile Include="Day3\DayThree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DayFour.cpp">
+    <ClCompile Include="Day4\DayFour.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DayZero.cpp">
+    <ClCompile Include="Day0\DayZero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Day5\DayFive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,25 +44,28 @@
     <ClInclude Include="AdventOfCode2022.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DayOne.h">
+    <ClInclude Include="Day1\DayOne.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DayTwo.h">
+    <ClInclude Include="Day2\DayTwo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DayThree.h">
+    <ClInclude Include="Day3\DayThree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DayFour.h">
+    <ClInclude Include="Day4\DayFour.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Day.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DayZero.h">
+    <ClInclude Include="Day0\DayZero.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Days.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Day5\DayFive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -69,16 +75,19 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <CopyFileToFolders Include="Day1Input.txt">
+    <CopyFileToFolders Include="Resources\Day1Input.txt">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="Day2Input.txt">
+    <CopyFileToFolders Include="Resources\Day2Input.txt">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="Day3Input.txt">
+    <CopyFileToFolders Include="Resources\Day3Input.txt">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
-    <CopyFileToFolders Include="Day4Input.txt">
+    <CopyFileToFolders Include="Resources\Day4Input.txt">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Resources\Day5Input.txt">
       <Filter>Resource Files</Filter>
     </CopyFileToFolders>
   </ItemGroup>
