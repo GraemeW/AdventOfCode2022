@@ -25,7 +25,7 @@ HMODULE GCM()
 int main()
 {
 	// Main Selection
-	AOC::AdventDay daySelector = AOC::AdventDayFour;
+	AOC::AdventDay daySelector = AOC::AdventDayFive;
 	int partSelector = 2;
 
 	// Execution

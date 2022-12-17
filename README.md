@@ -16,7 +16,7 @@
 | [2](AdventOfCode2022/Day2/README.md) | X | X | 1. Decode rock paper scissors matches, calculate score 2. Infer RPS hand from opponent hand + win condition |
 | [3](AdventOfCode2022/Day3/README.md) | X | X | 1. Split cart in half, find unique entries / half, find common item 2. Find common entry in 3 carts |
 | [4](AdventOfCode2022/Day4/README.md) | X | X | 1. Range -> vector, intersect carts & check length vs. carts 2. Count intersected cart length |
-| [5](AdventOfCode2022/Day5//README.md) |  |  |  |
+| [5](AdventOfCode2022/Day5//README.md) | X | X | 1. Parse initial crate map & instruction set, pop crates to instructions 2. Pop to temporary stack, move column | 
 | 6 |  |  |  |
 | 7 |  |  |  |
 | 8 |  |  |  |
