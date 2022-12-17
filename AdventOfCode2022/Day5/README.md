@@ -5,8 +5,11 @@
 ```
 Question 1
 
+Final top crate line-up is: WCZTHTMPS
 
 Question 2
+
+Final top crate line-up is: BLSGJSDTS
 
 ```
 
