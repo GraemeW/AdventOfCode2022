@@ -6,3 +6,4 @@
 #include "Day3/DayThree.h"
 #include "Day4/DayFour.h"
 #include "Day5/DayFive.h"
+#include "Day6/DaySix.h"

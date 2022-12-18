@@ -134,6 +134,7 @@
     <ClCompile Include="Day3\DayThree.cpp" />
     <ClCompile Include="Day2\DayTwo.cpp" />
     <ClCompile Include="Day0\DayZero.cpp" />
+    <ClCompile Include="Day6\DaySix.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdventOfCode2022.h" />
@@ -145,6 +146,7 @@
     <ClInclude Include="Day3\DayThree.h" />
     <ClInclude Include="Day2\DayTwo.h" />
     <ClInclude Include="Day0\DayZero.h" />
+    <ClInclude Include="Day6\DaySix.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +186,16 @@
       <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatOutputAsContent>
     </CopyFileToFolders>
     <CopyFileToFolders Include="Resources\Day5Input.txt">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatOutputAsContent>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Resources\Day6Input.txt">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>

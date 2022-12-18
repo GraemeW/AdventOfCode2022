@@ -5,7 +5,7 @@ class AOC
 {
 	// Attributes
 	public:
-		enum AdventDay { AdventDayOne, AdventDayTwo, AdventDayThree, AdventDayFour, AdventDayFive };
+		enum AdventDay { AdventDayOne, AdventDayTwo, AdventDayThree, AdventDayFour, AdventDayFive, AdventDaySix };
 
 	// Methods
 	public:

@@ -25,8 +25,8 @@ HMODULE GCM()
 int main()
 {
 	// Main Selection
-	AOC::AdventDay daySelector = AOC::AdventDayFive;
-	int partSelector = 2;
+	AOC::AdventDay daySelector = AOC::AdventDaySix;
+	int partSelector = 1;
 
 	// Execution
 	int resourceType = TEXTFILE;
@@ -93,8 +93,14 @@ Day* AOC::GetDaySelectors(AdventDay adventDay, int& resourceInput)
 		case AOC::AdventDay::AdventDayFive:
 		{
 			resourceInput = DAY5_INPUT;
-			DayFive* dayFour = new DayFive();
-			return dayFour;
+			DayFive* dayFive = new DayFive();
+			return dayFive;
+		}
+		case AOC::AdventDay::AdventDaySix:
+		{
+			resourceInput = DAY6_INPUT;
+			DaySix* daySix = new DaySix();
+			return daySix;
 		}
 	}
 	DayZero* dayZero = new DayZero();
